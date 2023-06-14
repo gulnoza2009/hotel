@@ -1,0 +1,24 @@
+.cozy{
+    @include padding_sec;
+    @include flex();
+    gap: 12.5rem;
+    &__info{
+        width: 55%;
+        h2{
+            @include font_title();
+            color: $primary_color;
+        }
+        p{
+            @include font_p;
+            @include margin_p;
+        }
+        button{
+            @include btn;
+            @include font_btn;
+            @include padding_btn;
+        }
+    }
+    &__img{
+        width: 45%;
+    }
+}

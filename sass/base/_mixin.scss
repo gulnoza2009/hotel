@@ -1,0 +1,44 @@
+@mixin flex($jc:start){
+    display: flex;
+    align-items: center;
+    justify-content: $jc;
+}
+@mixin btn{
+    border-radius: 0.4rem;
+    background-color: $btn_bg;
+    color: $white;
+}
+@mixin font_btn{
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+}
+@mixin font_p{
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    color: $secondary_color;
+}
+@mixin font_title($fs:3.6rem,$lh:5.4rem,$fw:600){
+    font-size: $fs;
+    line-height: $lh;
+    font-weight: $fw;
+}
+@mixin padding_btn{
+    padding: 1.6rem 3.2rem;
+}
+@mixin padding_sec{
+    padding: 8rem 0;
+}
+@mixin margin_p{
+    margin: 2.4rem 0 3.2rem 0;
+}
+@mixin h3($color:#424F7B){
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    color: $color;
+}
+@mixin transition{
+    transition: all .5s linear;
+}

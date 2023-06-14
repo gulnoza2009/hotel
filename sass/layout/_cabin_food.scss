@@ -1,0 +1,19 @@
+.c_f{
+    @include padding_sec;
+    &__card{
+        @include flex(space-between);
+        gap: 12.5rem;
+        &:first-child{
+            margin-bottom: 3rem;
+        }
+        h2{
+            @include font_title();
+            color: $primary_color;
+        }
+        p{
+            @include font_p;
+            @include margin_p;
+            width: 85%;
+        }
+    }
+}

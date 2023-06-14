@@ -1,0 +1,35 @@
+.customer{
+    text-align: center;
+    padding: 8rem 20rem;
+    img{
+        margin: 6.2rem 0 4.4rem 0;
+    }
+    h2{
+        @include font_title;
+        color: $primary_color;
+    }
+    p{
+        @include font_p;
+    }
+    h3{
+        @include h3($primary_color);
+        margin:2.4rem; 
+    }
+    .span{
+        @include flex();
+        display: inline-flex;
+        gap:1.2rem;
+    }
+    span{
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: rgba(250, 176, 71, 0.35);
+    }
+    span:hover{
+        width: 1.2rem;
+        height: 1.2rem;
+        border-radius: 50%;
+        background: #FAB047;
+    }
+}

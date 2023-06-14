@@ -1,0 +1,42 @@
+.to_choose{
+    @include padding_sec;
+    text-align: center;
+    h2{
+        @include font_title;
+        color: $primary_color;
+    }
+    p{
+        @include font_p;
+        padding:2.4rem 30rem 3.2rem 30rem;
+    }
+    button{
+        @include btn;
+        @include padding_btn;
+        @include font_btn
+    }
+    .cards{
+        @include flex();
+        margin-top: 8.8rem;
+    }
+    .card{
+        width: 33.3%;
+        text-align: start;
+        .card>img{
+            width: 100%;
+        }
+        h3{
+            @include h3(#000);
+            margin: 3.2rem 0 1.6rem 0;
+        }
+        p{
+            padding:0 1rem 0 0; 
+        }
+        a{
+            margin-top: 3.2rem;
+            @include font_p;
+            color:$primary_color;
+            @include flex;
+            gap:1.4rem;
+        }
+    }
+}

@@ -1,0 +1,77 @@
+.contact{
+    @include flex();
+    @include padding_sec;
+    gap: 20.5rem;
+    p{
+        @include font_p;
+        @include margin_p;
+    }
+    &__info{
+        width: 40%;
+        span{
+            @include font_btn;
+            line-height: 2.4rem;
+            margin-bottom: 1.2rem;
+            color: $btn_bg;
+        }
+        h2{
+            @include font_title;
+            color:$primary_color;
+        }
+        .btn{
+            @include flex();
+            gap: 2.5rem;
+        }
+        button{
+            @include btn;
+            @include font_btn;
+            @include padding_btn;
+        }
+        a{
+            @include font_btn;
+            color: $btn_bg; 
+        }
+    }
+    &__acc{
+        width: 60%;
+        h3{
+            @include h3;
+        }
+        input{
+            display: none;
+        }
+        .acc{
+            width: 100%;
+            border-radius: 4px;
+            padding: 3rem 3rem 0rem 3.6rem;
+            @include flex(space-between);
+            flex-wrap: wrap;
+            margin-bottom: 2.5rem;
+            box-shadow:(0px 4px 30px rgba(0, 0, 0, 0.07)),(0px 4px 30px rgba(0, 0, 0, 0.07));
+        }
+        .acc_content{
+            max-height: 0px;
+            overflow: hidden;
+            transition: all .3s linear;
+            margin-top: 0;
+        }
+        label{
+            background-image: url(../../img/icons/arrow-down.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: $acc_down_bg;
+            border-radius: 50%;
+            width: 4rem;
+            height: 4rem;
+        }
+        input:checked ~ label{
+            background-image: url(../../img/icons/arrow-up.svg);
+            background-color: $acc_up_bg;
+        }
+        input:checked ~ .acc_content{
+            max-height: 6rem;
+            width: 100%;
+            @include margin_p;
+        }
+    }
+}
